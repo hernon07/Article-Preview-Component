@@ -1,0 +1,168 @@
+/*RESET*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Body Styles*/
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Manrope", sans-serif;
+  background-color: #f2f2f2;
+  margin: 10px 0;
+}
+
+/*Card Styles*/
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 730px;
+  height: 280px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+/*Image Container Styles*/
+
+.image-container {
+  width: 40%;
+  height: 280px;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+/*Text Container Styles*/
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 280px;
+  padding: 30px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #48556a;
+}
+
+.paragraph {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6e8098;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info {
+  display: flex;
+  gap: 15px;
+}
+
+.profile-info > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-info > .name-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #48556a;
+}
+
+.gray {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #9daec2;
+}
+
+.share {
+  width: 15px;
+  height: 13px;
+}
+
+.share-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+  display: grid;
+  place-content: center;
+}
+
+/*Tooltip Styles*/
+
+.tooltip {
+  width: 248px;
+  padding: 10px;
+  background-color: #48556a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.tooltip-txt {
+  font-size: 13px;
+  color: #9daec2;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+/*Mobile Styles*/
+
+@media (max-width: 700px) {
+  .card {
+    flex-direction: column;
+    width: 327px;
+    height: 512px;
+  }
+  .image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .image-container > img {
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .text-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tooltip {
+    width: 327px;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
